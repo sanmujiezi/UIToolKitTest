@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/newUI.uss?fileID=7433441132597879392&amp;guid=4d7fd9805ced39a499ca825aab5c59dc&amp;type=3#newUI" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" style="height: 22px; width: 289px;" />
+    <ui:GroupBox style="height: 143px; width: 246px;">
+        <ui:Label text="Label" display-tooltip-when-elided="true" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" />
+        <ui:Toggle label="Toggle" value="true" />
+        <ui:Slider picking-mode="Ignore" label="Slider" value="-8.1" high-value="10" show-input-field="true" page-size="2.26" />
+        <ui:SliderInt picking-mode="Ignore" label="SliderInt" value="42" high-value="100" />
+    </ui:GroupBox>
+</ui:UXML>
