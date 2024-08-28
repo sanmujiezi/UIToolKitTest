@@ -9,11 +9,16 @@ public abstract class Node : ScriptableObject
         Running,
         Waiting
     };
+    
+    [HideInInspector]public string guid;
+    [HideInInspector]public Vector2 position;
 
+    
     public State state = State.Waiting;
     public bool started = false;
-    public List<Node> children = new List<Node>();
+    
 
+    // ReSharper disable Unity.PerformanceAnalysis
     public Node OnUpdate()
     {
         if (!started)
@@ -31,7 +36,7 @@ public abstract class Node : ScriptableObject
     }
 
     public abstract Node LogicUpdate();
-    public abstract void OnStart();
-    public abstract void OnStop();
+    protected abstract void OnStart();
+    protected abstract void OnStop();
 
 }

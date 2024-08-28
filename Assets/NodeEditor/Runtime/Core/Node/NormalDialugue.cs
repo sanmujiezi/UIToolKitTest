@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+[CreateAssetMenu()]
 public class NormalDialugue : SingleNode
 {
     [TextArea] public string dialogueContent;
@@ -18,12 +18,14 @@ public class NormalDialugue : SingleNode
         return this;
     }
 
-    public override void OnStart()
+    // ReSharper disable Unity.PerformanceAnalysis
+    protected override void OnStart()
     {
         Debug.Log(dialogueContent);
     }
 
-    public override void OnStop()
+    // ReSharper disable Unity.PerformanceAnalysis
+    protected override void OnStop()
     {
         Debug.Log("OnStop");
     }
