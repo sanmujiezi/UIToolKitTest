@@ -8,11 +8,6 @@ public class NodeTreeRunner : MonoBehaviour
     public NodeTree tree;
     private bool _istreeNotNull;
 
-    private void Start()
-    {
-        _istreeNotNull = tree != null;
-    }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -20,7 +15,7 @@ public class NodeTreeRunner : MonoBehaviour
             tree.OnTreeStart();
         }
         
-        if (_istreeNotNull)
+        if (tree != null)
         {
             tree.Update();
         }

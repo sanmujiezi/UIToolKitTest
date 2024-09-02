@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+=======
+﻿using UnityEngine;
+>>>>>>> 0d5b0dccc9a1483ab1347a49575f20d3fdf866e3
 [CreateAssetMenu()]
 public class NormalDialugue : SingleNode
 {
@@ -23,12 +27,14 @@ public class NormalDialugue : SingleNode
         return this;
     }
 
-    public override void OnStart()
+    // ReSharper disable Unity.PerformanceAnalysis
+    protected override void OnStart()
     {
         Debug.Log(dialogueContent);
     }
 
-    public override void OnStop()
+    // ReSharper disable Unity.PerformanceAnalysis
+    protected override void OnStop()
     {
         Debug.Log("OnStop");
     }
