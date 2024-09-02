@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -31,7 +32,10 @@ public class NodeTree : ScriptableObject
         treeState = Node.State.Waiting;
         runningNode.state = Node.State.Waiting;
     }
+<<<<<<< HEAD
+=======
     
+>>>>>>> 0d5b0dccc9a1483ab1347a49575f20d3fdf866e3
 #if UNITY_EDITOR
     public Node CreateNode(System.Type type){
         Node node = ScriptableObject.CreateInstance(type) as Node;
@@ -53,5 +57,9 @@ public class NodeTree : ScriptableObject
         return node;
     }
 #endif
+<<<<<<< HEAD
+    
+=======
    
+>>>>>>> 0d5b0dccc9a1483ab1347a49575f20d3fdf866e3
 }

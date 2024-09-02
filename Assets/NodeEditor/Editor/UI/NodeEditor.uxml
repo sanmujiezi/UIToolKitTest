@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement" style="flex-direction: row; flex-grow: 1;">
+        <ui:VisualElement name="Left" style="flex-grow: 0.5;">
+            <ui:Label text="Inspeactor" display-tooltip-when-elided="true" name="Inspeactor" style="font-size: 15px; -unity-text-align: upper-left; -unity-font-style: bold;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Right" style="flex-grow: 1; flex-wrap: wrap; flex-direction: column;">
+            <ui:Label text="NodeTreeVirewer" display-tooltip-when-elided="true" name="NodeTreeVirewer" style="font-size: 15px; -unity-font-style: bold;" />
+            <NodeTreeViewer focusable="true" name="NodeTreeViewer" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

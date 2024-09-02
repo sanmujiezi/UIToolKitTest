@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement />
-    <ui:ScrollView />
-    <ui:ListView focusable="true" />
-    <ui:Button text="Button" display-tooltip-when-elided="true" />
-</ui:UXML>
