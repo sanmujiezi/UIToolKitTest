@@ -4,6 +4,9 @@ using UnityEngine;
 
 public abstract class Node : ScriptableObject
 {
+    
+    [HideInInspector]public string guid;
+    [HideInInspector]public Vector2 position;
     public enum State
     {
         Running,
@@ -12,8 +15,7 @@ public abstract class Node : ScriptableObject
 
     public State state = State.Waiting;
     public bool started = false;
-    public List<Node> children = new List<Node>();
-
+    
     public Node OnUpdate()
     {
         if (!started)

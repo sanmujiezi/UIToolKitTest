@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[CreateAssetMenu()]
 public class BranchDialogue : CompositeNode
 {
     [TextArea] public string dialogueContent;

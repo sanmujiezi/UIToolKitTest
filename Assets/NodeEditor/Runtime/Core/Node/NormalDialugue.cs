@@ -1,8 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
+[CreateAssetMenu()]
 public class NormalDialugue : SingleNode
 {
+   
     [TextArea] public string dialogueContent;
+    
+    
     public override Node LogicUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
